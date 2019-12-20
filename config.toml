@@ -1,41 +1,57 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "Hugo Ivy"
+title = "芳 | Yang"
 theme = "hugo-ivy"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 preserveTaxonomyNames = true
 footnotereturnlinkcontents = "↩"
+hasCJKLanguage = true
+enableEmoji = true
+rssLimit = 100
 
 [permalinks]
     post = "/post/:year/:month/:day/:slug/"
     note = "/note/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "Home"
+    name = "首页"
     url = "/"
     weight = 1
 [[menu.main]]
-    name = "About"
+    name = "简介"
     url = "/about/"
     weight = 2
 [[menu.main]]
-    name = "Categories"
+    name = "分类"
     url = "/categories/"
     weight = 3
 [[menu.main]]
-    name = "Tags"
+    name = "标签"
     url = "/tags/"
     weight = 4
 [[menu.main]]
-    name = "Subscribe"
+    name = "订阅"
     url = "/index.xml"
 
 [params]
-    description = "A Hugo theme ported from the static site generator Ivy."
-    footer = "&copy; [Yihui Xie](https://yihui.name) 2017 | [Github](https://github.com/yihui) | [Twitter](https://twitter.com/xieyihui)"
-
+    description = "杨芳的小心思"
+    footer = "&copy; [杨芳](https://yang) 2019"
+    customJS = [
+    "js/fix-toc.js",
+    "js/center-img.js",
+    "js/right-quote.js",
+    "js/no-highlight.js",
+    "js/fix-footnote.js",
+    "js/math-code.js",
+    "js/external-link.js",
+    "js/alt-title.js",
+    "js/header-link.js"
+    ]
+    githubContentURL = "https://github.com/john-qu/johnqu.site/edit/master/content/"
+    twitterImage = "/images/logo.png"
+    
   highlightjsVersion = "9.12.0"
   highlightjsCDN = "//cdn.bootcss.com"
   highlightjsLang = ["r", "yaml", "tex"]
