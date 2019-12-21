@@ -20,7 +20,7 @@ rssLimit = 100
     url = "/"
     weight = 1
 [[menu.main]]
-    name = "简介"
+    name = "关于"
     url = "/about/"
     weight = 2
 [[menu.main]]
